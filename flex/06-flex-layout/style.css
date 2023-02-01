@@ -5,7 +5,47 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: large;
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.left-links, .right-links{
+  display: flex;
+  gap: 16px;
+
+}
+
+.content {
+  /* flex:1 is what pushed the footer to the bottom-why? */
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
 img {
   width: 600px;
@@ -15,7 +55,9 @@ button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
-  background: #eee;
+  background: #eeeeee;
+  padding: 10px 16px;
+  font-weight: bold;
 }
 
 input {
